@@ -556,6 +556,48 @@
             color: var(--accent-color);
         }
 
+        /* Download Section */
+        .download-section {
+            text-align: center;
+        }
+
+        .download-options {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .download-card {
+            background-color: var(--secondary-black);
+            border-radius: var(--border-radius);
+            padding: 40px 30px;
+            width: 300px;
+            transition: var(--transition);
+        }
+
+        .download-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .download-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .download-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .download-description {
+            color: var(--secondary-white);
+            margin-bottom: 25px;
+        }
+
         /* Footer */
         footer {
             background-color: var(--accent-black);
@@ -1125,6 +1167,49 @@
         </div>
     </section>
 
+    <!-- Download Section -->
+    <section class="section download-section" id="download">
+        <div class="container">
+            <h2 class="section-title">Get PyThrow Now</h2>
+            <p class="section-subtitle">Available for Android devices. Download directly to your device or get the source code to build it yourself.</p>
+            
+            <div class="download-options">
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fab fa-google-play"></i>
+                    </div>
+                    <h3 class="download-title">Google Play</h3>
+                    <p class="download-description">Get the official release from Google Play Store. Automatic updates and secure installation.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.pythrow.arm" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-google-play"></i> Play Store
+                    </a>
+                </div>
+                
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3 class="download-title">Direct APK</h3>
+                    <p class="download-description">Download the APK file directly. Install manually on your Android device.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.pythrow.arm" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-download"></i> Download APK
+                    </a>
+                </div>
+                
+                <div class="download-card">
+                    <div class="download-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="download-title">Go Git Hub</h3>
+                    <p class="download-description">Access the complete source code on GitHub. Build, modify, or contribute to the project.</p>
+                    <a href="https://github.com/RupPwr" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="section contact-section" id="contact">
         <div class="container">
@@ -1213,7 +1298,7 @@
             </div>
             
             <div class="copyright">
-                <p>&copy; 2025 Rup's Laboratory. All rights reserved.</p>
+                <p>&copy; 2026 Rup's Laboratory. All rights reserved.</p>
                 <p style="margin-top: 10px;">Developed By: Rup's Laboratory</p>
             </div>
         </div>
